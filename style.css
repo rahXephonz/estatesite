@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+*:before,
+*:after {
+ box-sizing: border-box;
+}
+
+
+.main-container {
+    min-height: 100vh; /* will cover the 100% of viewport */
+    overflow: hidden;
+    display: block;
+    position: relative;
+    bottom: 0;
+   }
+
+/* FORM INPUT SEARCH */
+.jumbotron form {
+    position: relative;
+    margin-top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1s;
+    width: 650px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.jumbotron input {
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 42.5px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 48px;
+}
+
+.jumbotron form .fa {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    color: white;
+    font-size: 1.2em;
+    transition: all 1s;
+    background: #E51D52;
+    border-radius: 50%;
+}
+
+.jumbotron form input {
+    display: block;
+}
+
+/* AKHIR DARI CONTENT */
+
+/* CONTENT JUMBOTRON */
+.jumbotron {
+    margin-top: -5px;
+    width: 100%;
+    height: 845px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 1px;
+    color: white;
+    font-family: 'Balsamiq Sans', cursive;
+    animation: animate 15s ease-in-out infinite;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url(images/capespace-2.png);
+    }
+    50%{
+        background-image: url(images/capespace-3.png);
+    }
+    25%{
+        background-image: url(images/capespace.png);
+    }
+
+}
+
+.button {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*AKHIR DARI CONTENT*/
+
+/*poisisi media di urutan css mempengaruhi */
+
+.jumbotron form{
+    z-index: 1029;
+    overflow: hidden;
+}
+
+@media (max-width: 540px) {
+    .owl-carousel .item img{
+        box-sizing: border-box;
+        width: 500px;
+        margin: auto;
+    }
+
+    .jumbotron form{
+        z-index: 1;
+    }
+  }
+
+
+
+/* CONTENT NAVBAR */
+
+@media(max-width: 420px){
+    #menu{
+        width: 35px;
+        height: 30px;
+        margin: 30px 0 20px 20px;
+        cursor: pointer;
+        visibility: hidden;
+        
+    }
+
+    .bar{
+        height: 5px;
+        width: 100%;
+        background-color: white;
+        border-radius: 5px;
+        transition: 0.3s ease;
+        
+    }
+
+    .jumbotron{
+        height: 500px;
+    }
+    
+    .jumbotron form{
+        z-index: 1031;
+        position: fixed;
+        margin-top: 10px;
+        width: 90%;
+        overflow: hidden;
+    }
+
+    .jumbotron .text{
+        margin-top: 70px;
+    }
+
+    .owl-carousel .item img{
+        box-sizing: border-box;
+        width: 340px;
+        margin: auto;
+    }
+
+    nav a.navbar-brand{
+        visibility: hidden;
+    }
+
+    span.x8921yzl_ {
+        font-size: 25px !important;
+    }
+
+}
+
+@media(max-width: 320px){
+    .owl-carousel .item img{
+        box-sizing: border-box;
+        width: 270px !important;
+        margin: auto;
+    }
+}
+
+#menu{
+    width: 35px;
+    height: 30px;
+    margin: 30px 0 20px 20px;
+    cursor: pointer;
+}
+
+.bar{
+    height: 5px;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+
+#bar1{
+	transform: translateY(-4px);
+}
+#bar2{
+    width: 20px;
+}
+#bar3{
+	transform: translateY(4px);
+}
+
+
+.nav li a{
+	color: #fff;
+	text-decoration: none;
+    transition: font-size .5s;
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.nav li a:hover{
+	font-size: 22px;
+    color: aqua;
+}
+.nav li{
+	list-style: none;
+	padding: 16px 0;
+}
+.nav{
+	padding: 0;
+	margin: 0 20px;
+	transition: 0.3s ease;
+	display: none;
+}
+.menu-bg, #menu-bar{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+.menu-bg{
+	z-index: 1;
+	width: 0;
+	height: 0;
+	margin: 30px 0 20px 20px;
+	background: radial-gradient(circle,#2b2c2b,#141514);
+	border-radius: 50%;
+	transition: 0.3s ease;
+}
+#menu-bar{
+	z-index: 2;	
+}
+.change-bg{
+	width: 770px;
+	height: 750px;
+	transform: translate(-60%,-30%);
+}
+.change .bar{
+	background-color: white;
+}
+.change #bar1{
+	transform: translateY(4px) rotateZ(-45deg);
+}
+.change #bar3{
+	transform: translateY(-6px) rotate(45deg);
+}
+.change #bar2{
+	opacity: 0;
+}
+.change{
+	display: block;
+}
+
+nav a.navbar-brand{
+    display: block;
+    margin: auto;
+}
+
+/* AKHIR DARI CONTENT */
+
+/*  ANIMASI KETIKA SCROLLING */
+
+/*top navbar*/
+.bg-color{
+    background: transparent !important;
+    transition: 0.5s ease;
+    margin-top: -52px;
+}
+
+.bg-color.scrolled{
+    background: #343A40 !important;
+    transform: translateY(60%) !important;
+}
+
+/*bottom navbar*/
+.bg-hidden{
+    background: #2b2c2b !important;
+    transition: 0.5s ease;
+}
+
+.bg-hidden.scrolled{
+    transform: translateY(100%) !important;
+    visibility: hidden !important;
+    overflow: hidden !important;
+    transition: 0.2s
+}
+/* AKHIR DARI CONTENT */
+
+
+/*LOADING ANIMATION */
+.loader{
+    position: fixed;
+    z-index: 1032;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #323537;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img{
+    width: 250px;
+}
+
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+
+    }
+
+}
+
+/* AKHIR DARI CONTENT */
+span.x8921yzl_{
+    display: block; 
+    text-align: center; 
+    padding-bottom: 25px; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 40px; 
+    font-weight: bold;
+}
+.owl-carousel .item img{
+    box-sizing: border-box;
+    border-radius: 25px;
+}
+
+.owl-carousel .owl-dot{
+    margin-top: 35px;
+}
+
+/*CONTENT FOOTER */
+footer{
+    background-color: #33383c;
+    padding: 80px 0px;
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    width: 100%;
+}	       
+
+footer ul li{
+    padding:5px 0px;
+}
+
+.adress span , .contact span , .social span{
+   color: #FFF; 
+   font-weight: 800; 
+   padding-bottom: 10px; 
+   margin-bottom: 20px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 3px;
+}
+
+ 
+.adress li p , .contact li a{
+    color:#FFF;
+    letter-spacing: 2px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.social li{
+    float:left;
+}
+
+.adress , .contact , .social {
+    list-style: none;
+}
+
+.social li .fab{
+    padding-right: 20px;
+    color:#9c9c9c;
+    font-size:35px;
+    transition: font-size .5s;
+}
+
+.social li .fab:hover{
+	font-size: 40px;
+    color: white;
+}
+ /* AKHIR DARI CONTENT */
